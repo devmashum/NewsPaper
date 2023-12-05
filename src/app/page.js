@@ -1,18 +1,16 @@
 "use client"
-import React, { useState } from 'react';
+import Counter from "@/components/Counter/Counter";
+
 
 const HomePage
  = () => {
-  const [counter, setCount]=useState(0);
 
   return (
     
      <div>
-
-      <h2>Counter: {counter}</h2>
-
-      <button onClick={()=>setCount(counter +1)} className='btn btn-primary'> Increase</button>
-      <button onClick={()=>setCount(counter -1)} className='btn btn-primary'> Decrease</button>
+<h1>Home page</h1>
+<Counter></Counter>
+   
      </div>
 
   );
